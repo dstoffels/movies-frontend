@@ -1,8 +1,6 @@
 const MovieList = ({}) => {
-	const titles = ['Princess Bride', 'Forrest Gump', 'Iron Man', 'Pulp Fiction'];
-
-	const movieItems = titles.map((title) => <div>{title}</div>);
-
+	const movies = ['Princess Bride', 'Forrest Gump', 'Iron Man', 'Pulp Fiction'];
+	const movieItems = movies.map((movie) => <div>{movie}</div>);
 	return (
 		<div>
 			<h4>My Movies</h4>
