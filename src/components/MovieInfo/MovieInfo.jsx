@@ -1,14 +1,15 @@
-const MovieInfo = ({ title, runningTime, genre }) => {
+const MovieInfo = ({ selectedMovie }) => {
+	console.log(selectedMovie);
 	return (
 		<div>
-			<h4>{title}</h4>
+			<h4>{selectedMovie.title}</h4>
 			<div>
 				<span>Running Time</span>
-				<span>{runningTime}</span>
+				<span>{selectedMovie.runningTime}</span>
 			</div>
 			<div>
 				<span>Genre</span>
-				<span>{genre}</span>
+				<span>{selectedMovie.genre}</span>
 			</div>
 		</div>
 	);

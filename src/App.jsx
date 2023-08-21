@@ -5,11 +5,16 @@ import MovieInfo from './components/MovieInfo/MovieInfo';
 import NewMovieForm from './components/NewMovieForm/NewMovieForm';
 
 function App() {
+	const selectedMovie = {
+		title: 'Princess Bride',
+		runningTime: 142,
+		genre: 'Romantic Comedy',
+	};
 	return (
 		<div className="App">
 			<Header />
 			<MovieList />
-			<MovieInfo title="Princess Bride" runningTime={142} genre="Romantic Comedy" />
+			<MovieInfo selectedMovie={selectedMovie} />
 			<NewMovieForm />
 		</div>
 	);
