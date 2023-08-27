@@ -1,13 +1,25 @@
-import TextField from '../TextField/TextField';
+import React, { useState } from 'react';
 
 const NewMovieForm = ({}) => {
+	const [title, setTitle] = useState('');
+	const [runningTime, setRunningTime] = useState('');
+	const [genre, setGenre] = useState('');
+
 	return (
-		<form>
+		<form className="flex-item">
 			<h4>Add Movie</h4>
-			<TextField label="Title" />
-			<TextField label="Running Time" />
-			<TextField label="Genre" />
-			<button type="submit">Add Movie</button>
+			<div>
+				<label>Title</label>
+				<input value={title} onChange={(e) => setTitle(e.target.value)} />
+			</div>
+			<div>
+				<label>Running Time</label>
+				<input value={runningTime} onChange={(e) => setRunningTime(e.target.value)} />
+			</div>
+			<div>
+				<label>Title</label>
+				<input value={genre} onChange={(e) => setGenre(e.target.value)} />
+			</div>
 		</form>
 	);
 };

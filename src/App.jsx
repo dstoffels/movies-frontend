@@ -6,16 +6,19 @@ import NewMovieForm from './components/NewMovieForm/NewMovieForm';
 
 function App() {
 	const selectedMovie = {
-		title: 'Princess Bride',
-		runningTime: 142,
-		genre: 'Romantic Comedy',
+		title: 'Forrest Gump',
+		runningTime: 136,
+		genre: 'Romantic Drama',
 	};
+
 	return (
 		<div className="App">
 			<Header />
-			<MovieList />
-			<MovieInfo selectedMovie={selectedMovie} />
-			<NewMovieForm />
+			<div className="flex-container">
+				<MovieList />
+				<MovieInfo movieObj={selectedMovie} />
+				<NewMovieForm />
+			</div>
 		</div>
 	);
 }
