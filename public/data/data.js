@@ -6,18 +6,18 @@ const initData = [
 	},
 	{
 		title: 'Princess Bride',
-		runningTime: 121,
-		genre: 'Romantic Comedy',
+		runningTime: 142,
+		genre: 'Romantic Drama',
 	},
 	{
 		title: 'Iron Man',
-		runningTime: 155,
-		genre: 'Comic',
+		runningTime: 142,
+		genre: 'Romantic Drama',
 	},
 	{
 		title: 'Pulp Fiction',
-		runningTime: 130,
-		genre: 'Dark Comedy',
+		runningTime: 142,
+		genre: 'Romantic Drama',
 	},
 ];
 

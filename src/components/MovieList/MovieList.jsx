@@ -10,7 +10,6 @@ const MovieList = ({ movies = [], activeIndex, setActiveIndex }) => {
 			index={i}
 		/>
 	));
-
 	return (
 		<div className="flex-item">
 			<h4>My Movies</h4>

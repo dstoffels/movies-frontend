@@ -3,8 +3,8 @@
 }
 
 .movie-item {
-	padding: 5px 8px;
 	border-bottom: 2px solid grey;
+	padding: 5px 10px;
 	display: flex;
 	justify-content: space-between;
 }
