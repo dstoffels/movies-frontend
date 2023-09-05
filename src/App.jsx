@@ -24,11 +24,6 @@ function App() {
 		fetchMovies();
 	}, []);
 
-	const handleNewMovie = (newMovie) => {
-		const updatedMovies = [...movies, newMovie];
-		setMovies(updatedMovies);
-	};
-
 	const selectedMovie = movies[activeIndex];
 
 	return (
@@ -38,7 +33,7 @@ function App() {
 			<div className="flex-container">
 				<MovieList movies={movies} activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
 				<MovieInfo movieObj={selectedMovie} />
-				<NewMovieForm onNewMovie={handleNewMovie} />
+				<NewMovieForm onNewMovie={fetchMovies} />
 			</div>
 		</div>
 	);
